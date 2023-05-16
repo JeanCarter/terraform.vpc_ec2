@@ -1,0 +1,10 @@
+data "aws_ami" "deploy_ami" {
+  most_recent = true
+  owners      = ["137112412989"]
+  #ami-05fa00d4c63e32376
+  filter {
+    name   = "name"
+    values = ["amazon/amzn2-ami-kernel-5.10-hvm-2.0.20220805.0-x86_64-gp2"]
+    #amzn2-ami-kernel-5.10-hvm-2.0.20220805.0-x86_64-gp2
+  }
+}
